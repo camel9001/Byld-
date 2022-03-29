@@ -1,0 +1,47 @@
+@import 'scss/styles.scss', 'scss/reset.scss', 'scss/variables.scss', 'scss/mixins.scss';
+
+body,html {
+    height: 7440px;
+}
+
+.hero-image {   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/page1/img_hero.png");
+    height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    #navigation {
+        #navigation_list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            #menu_logo {
+            margin-top: 146px;
+            margin-left: 162px;
+            }
+            li {
+                margin-top: 164px;
+
+            }
+                a {
+                @include font(bold);
+                color: $color;
+                font-size: 24px;
+                text-decoration: none;
+                margin-top: 164px;
+                margin-left: 80px;
+            }
+
+        }
+    }
+    .slogan {
+        @include font(bold);
+        color: $color;
+        font-size: 64px;
+        margin-left: 162px;
+        margin-right: 526px;
+        margin-top: 360px;
+    }
+}

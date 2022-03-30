@@ -33,6 +33,9 @@ body,html {
                 margin-top: 164px;
                 margin-left: 80px;
             }
+            #line {
+                margin-left: 83px;
+            }
 
         }
     }
@@ -42,6 +45,32 @@ body,html {
         font-size: 64px;
         margin-left: 162px;
         margin-right: 526px;
-        margin-top: 360px;
+        margin-top: 240px;
     }
+    #btn1 {
+        @extend .button_primary;
+        margin-left: 162px;
+        margin-top: 100px;
+        @include font(bold);
+        font-size: 24px;
+        color: white;
+        &#btn1:hover {
+            cursor: pointer;
+            animation-duration: 1s;
+            transition-duration: 10000s;
+            animation-name: fade;
+            animation-direction: alternate;
+        }    
+        @keyframes fade {
+            from {background-color: transparent; color: white;}
+            to {background-color: white; color: black;}
+        }
+        &#btn1:active {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+    }
+    
 }
+
